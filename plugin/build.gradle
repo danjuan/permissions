@@ -1,0 +1,23 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+}
+repositories{
+    mavenCentral()
+}
+
+uploadArchives{
+    repositories.mavenDeployer{
+
+        //本地仓库路径
+        repository(url:uri('../maven'))
+        //groupId
+        pom.groupId='com.dz'
+        //artifactId
+        pom.artifactId='check.permission'
+        pom.version='1.0.1'
+    }
+}
