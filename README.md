@@ -5,7 +5,7 @@
 * app测试使用
 * plugin为权限检查插件
 * maven为plugin发布到本地的路径
-* 根目录的permission.json用于放置客户端合法的权限
+* 根目录的permission.json用于放置客户端已经经过审核的权限
 
 
 **用法**
